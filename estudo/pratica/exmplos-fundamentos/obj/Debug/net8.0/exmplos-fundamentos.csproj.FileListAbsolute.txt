@@ -1,0 +1,14 @@
+/home/giusepette/Documentos/site_pessoal/bootcamp-.net-api-ai/estudo/pratica/exmplos-fundamentos/bin/Debug/net8.0/exmplos-fundamentos
+/home/giusepette/Documentos/site_pessoal/bootcamp-.net-api-ai/estudo/pratica/exmplos-fundamentos/bin/Debug/net8.0/exmplos-fundamentos.deps.json
+/home/giusepette/Documentos/site_pessoal/bootcamp-.net-api-ai/estudo/pratica/exmplos-fundamentos/bin/Debug/net8.0/exmplos-fundamentos.runtimeconfig.json
+/home/giusepette/Documentos/site_pessoal/bootcamp-.net-api-ai/estudo/pratica/exmplos-fundamentos/bin/Debug/net8.0/exmplos-fundamentos.dll
+/home/giusepette/Documentos/site_pessoal/bootcamp-.net-api-ai/estudo/pratica/exmplos-fundamentos/bin/Debug/net8.0/exmplos-fundamentos.pdb
+/home/giusepette/Documentos/site_pessoal/bootcamp-.net-api-ai/estudo/pratica/exmplos-fundamentos/obj/Debug/net8.0/exmplos-fundamentos.GeneratedMSBuildEditorConfig.editorconfig
+/home/giusepette/Documentos/site_pessoal/bootcamp-.net-api-ai/estudo/pratica/exmplos-fundamentos/obj/Debug/net8.0/exmplos-fundamentos.AssemblyInfoInputs.cache
+/home/giusepette/Documentos/site_pessoal/bootcamp-.net-api-ai/estudo/pratica/exmplos-fundamentos/obj/Debug/net8.0/exmplos-fundamentos.AssemblyInfo.cs
+/home/giusepette/Documentos/site_pessoal/bootcamp-.net-api-ai/estudo/pratica/exmplos-fundamentos/obj/Debug/net8.0/exmplos-fundamentos.csproj.CoreCompileInputs.cache
+/home/giusepette/Documentos/site_pessoal/bootcamp-.net-api-ai/estudo/pratica/exmplos-fundamentos/obj/Debug/net8.0/exmplos-fundamentos.dll
+/home/giusepette/Documentos/site_pessoal/bootcamp-.net-api-ai/estudo/pratica/exmplos-fundamentos/obj/Debug/net8.0/refint/exmplos-fundamentos.dll
+/home/giusepette/Documentos/site_pessoal/bootcamp-.net-api-ai/estudo/pratica/exmplos-fundamentos/obj/Debug/net8.0/exmplos-fundamentos.pdb
+/home/giusepette/Documentos/site_pessoal/bootcamp-.net-api-ai/estudo/pratica/exmplos-fundamentos/obj/Debug/net8.0/exmplos-fundamentos.genruntimeconfig.cache
+/home/giusepette/Documentos/site_pessoal/bootcamp-.net-api-ai/estudo/pratica/exmplos-fundamentos/obj/Debug/net8.0/ref/exmplos-fundamentos.dll

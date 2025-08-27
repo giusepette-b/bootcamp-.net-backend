@@ -1,0 +1,82 @@
+2. Extensões Essenciais para VS Code
+Instale estas extensões:
+
+C# (desenvolvida pela Microsoft)
+
+NuGet Package Manager
+
+REST Client (para testar APIs)
+
+GitLens (para versionamento)
+
+Docker (se for usar containers)
+
+.Net é uma plataforma de desenvolvimento unificado que permite a construção de sistenas e aplicações.
+Já o C# é uma linguagem de programação usada pelo .NET.
+
+
+.Net Framework (legado) funciona apenas para windows. 
+.Net 5 (.net core 5) é a plataforma de desenvolvimento unificada.
+
+Compilador do .Net (funcionamento)
+JIT compiler: Just in time compiler.
+faz a compilação do código para linguagem nativa de computador
+IL (intermediary language)
+Independência de Plataforma:
+O código IL não é específico para um único sistema ou hardware, permitindo que os programas sejam executados em diferentes ambientes. 
+Segurança e Gerenciamento:
+O código IL suporta o gerenciamento de memória e outras funcionalidades do .NET, contribuindo para a segurança e estabilidade dos aplicativos. 
+Otimização:
+O compilador JIT realiza otimizações durante a conversão de IL para código de máquina, melhorando o desempenho do aplicativo. 
+
+A Verdade sobre JavaScript e PHP
+JavaScript:
+Não é compilado tradicionalmente como C# ou Java
+
+É interpretado pelo motor JavaScript do navegador ou Node.js
+
+Mas há compilação JIT (Just-In-Time) que acontece em tempo de execução
+
+PHP:
+Originalmente puramente interpretado
+
+Versões modernas usam compilação para bytecode + cache (OPcache)
+
+Não gera binários independentes como linguagens compiladas
+
+Quem faz a "mágica"?
+    A[Código JavaScript] --> B[Motor JS: V8, SpiderMonkey]
+    B --> C[Interpreter<br>Ignition no V8]
+    C --> D[Profiler<br>Monitora execução]
+    D --> E[Compiler JIT<br>TurboFan no V8]
+    E --> F[Bytecode Otimizado]
+    F --> G[Execução na CPU]
+
+    JavaScript vs C#:
+Aspecto	JavaScript	C#
+Compilação	JIT em tempo de execução	AOT + JIT
+Binário	Não gera arquivo executável	Gera .dll/.exe
+Performance	Boa (após otimização JIT)	Excelente
+Portabilidade	Alto (qualquer navegador)	Alto (com .NET Runtime)
+Os Motores por Trás da Mágica
+Motores JavaScript:
+V8 (Chrome, Node.js) - Google
+
+SpiderMonkey (Firefox) - Mozilla
+
+JavaScriptCore (Safari) - Apple
+
+Motores PHP:
+Zend Engine (oficial)
+
+HHVM (Facebook) - alternativa
+
+Na Prática: Quem Compila o Quê?
+Quando você executa...	Quem compila/interpreta	Para que formato
+node script.js	Motor V8	Bytecode + Machine Code (JIT)
+php script.php	Zend Engine	Bytecode PHP (OPcache)
+dotnet run	Roslyn Compiler	IL → Machine Code (JIT)
+Conclusão
+A afirmação "JavaScript e PHP não compilam" é tecnicamente imprecisa. Elas não compilam antes da execução como C/C++, mas sim durante a execução usando técnicas sofisticadas de JIT compilation.
+
+Isso explica por que JavaScript, que era lento nos anos 90, hoje compete em performance com linguagens compiladas em muitos cenários!

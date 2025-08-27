@@ -1,0 +1,32 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.2.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "estudo", "estudo", "{0CFE3634-A75F-C5DE-2895-EF3D05AE4EAF}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "pratica", "pratica", "{44C0DAC9-EE6A-B630-E40F-FBEEC9CDBC60}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "exmplos-fundamentos", "estudo\pratica\exmplos-fundamentos\exmplos-fundamentos.csproj", "{1E1B38B9-3AB5-A22A-334B-BA8789472CCC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1E1B38B9-3AB5-A22A-334B-BA8789472CCC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1E1B38B9-3AB5-A22A-334B-BA8789472CCC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1E1B38B9-3AB5-A22A-334B-BA8789472CCC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1E1B38B9-3AB5-A22A-334B-BA8789472CCC}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{44C0DAC9-EE6A-B630-E40F-FBEEC9CDBC60} = {0CFE3634-A75F-C5DE-2895-EF3D05AE4EAF}
+		{1E1B38B9-3AB5-A22A-334B-BA8789472CCC} = {44C0DAC9-EE6A-B630-E40F-FBEEC9CDBC60}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {8F8EC5BD-D38A-455B-9FE7-A2718E8D95D4}
+	EndGlobalSection
+EndGlobal
