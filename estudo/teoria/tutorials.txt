@@ -5,3 +5,147 @@ sudo apt install -y dotnet-sdk-8.0 aspnetcore-runtime-8.0
 dotnet tool install -g dotnet-ef
 dotnet tool install -g dotnet-serve
 dotnet tool install -g Microsoft.dotnet-interactive
+
+O comando dotnet new é extremamente poderoso e oferece diversos templates para diferentes tipos de aplicações. Aqui está um guia completo:
+
+🎯 Templates Mais Comuns e Úteis
+1. Aplicações Console (Que você já usa)
+bash
+dotnet new console -n MeuAppConsole
+Para que serve: Aplicações de linha de comando, scripts, ferramentas CLI.
+
+2. APIs Web (Backend)
+bash
+dotnet new webapi -n MinhaApi
+Para que serve: Criar REST APIs, microsserviços, endpoints backend.
+
+3. Aplicações Web (MVC)
+bash
+dotnet new mvc -n MinhaWebApp
+Para que serve: Aplicações web completas com frontend e backend.
+
+4. Blazor Server (Frontend + Backend integrados)
+bash
+dotnet new blazorserver -n MeuBlazorApp
+Para que serve: Aplicações web interativas com C# no frontend.
+
+5. Blazor WebAssembly (Frontend em C#)
+bash
+dotnet new blazorwasm -n MeuBlazorWasm
+Para que serve: Aplicações web que rodam no navegador usando WebAssembly.
+
+6. Biblioteca de Classes (Class Library)
+bash
+dotnet new classlib -n MinhaBiblioteca
+Para que serve: Criar DLLs para compartilhar código entre projetos.
+
+7. Test Projects (xUnit, NUnit, MSTest)
+bash
+dotnet new xunit -n MeusTestes
+# ou
+dotnet new nunit -n MeusTestes
+# ou  
+dotnet new mstest -n MeusTestes
+Para que serve: Criar suites de testes para suas aplicações.
+
+8. Empty Web Template
+bash
+dotnet new web -n MeuWebVazio
+Para que serve: Projeto web mínimo para configurar manualmente.
+
+🚀 Templates Específicos para Backend/API
+Para seu bootcamp, foque nestes:
+Comando	Descrição	Ideal para
+dotnet new webapi	API REST com controllers	Microsserviços, APIs
+dotnet new web	Web app mínimo	APIs leves, customizadas
+dotnet new classlib	Biblioteca compartilhada	Lógica de negócio reutilizável
+dotnet new xunit	Testes unitários	Garantir qualidade do código
+dotnet new sln	Solution file	Organizar múltiplos projetos
+💡 Exemplo de Estrutura para seu Bootcamp
+bash
+# Criar solution
+dotnet new sln -n BootcampSolution
+
+# Criar API principal
+dotnet new webapi -n API
+dotnet sln add API/API.csproj
+
+# Criar biblioteca de domínio
+dotnet new classlib -n Domain
+dotnet sln add Domain/Domain.csproj
+
+# Criar testes
+dotnet new xunit -n Tests
+dotnet sln add Tests/Tests.csproj
+
+# Adicionar referências
+dotnet add API/API.csproj reference Domain/Domain.csproj
+dotnet add Tests/Tests.csproj reference API/API.csproj
+dotnet add Tests/Tests.csproj reference Domain/Domain.csproj
+🎨 Templates Adicionais Úteis
+Para Frontend (quando for necessário):
+bash
+dotnet new react -n AppComReact
+dotnet new angular -n AppComAngular  
+dotnet new vue -n AppComVue
+Para Mobile:
+bash
+dotnet new maui -n AppMobile
+Para Games:
+bash
+dotnet new unity -n MeuJogo
+🔍 Como Descobrir Todos os Templates
+bash
+# Listar todos os templates instalados
+dotnet new list
+
+# Procurar templates específicos
+dotnet new search api
+
+# Instalar templates adicionais
+dotnet new install Microsoft.AspNetCore.Components.WebAssembly.Templates::*
+📊 Exemplo Prático: Criando uma API
+bash
+# Criar uma API REST
+dotnet new webapi -n ProductsAPI
+
+# Navegar para a pasta
+cd ProductsAPI
+
+# Executar a API
+dotnet run
+
+# Acessar no navegador
+# https://localhost:7000/swagger
+🛠️ Estrutura Gerada pelo webapi template:
+text
+ProductsAPI/
+├── Controllers/
+│   └── WeatherForecastController.cs
+├── Program.cs
+├── Properties/
+│   └── launchSettings.json
+├── appsettings.json
+└── ProductsAPI.csproj
+💡 Dica Importante:
+Você pode customizar templates com opções:
+
+bash
+# Criar API sem OpenAPI
+dotnet new webapi --no-openapi -n MinhaApi
+
+# Criar com .NET 8 específico
+dotnet new webapi --framework net8.0 -n MinhaApi
+
+# Criar com autenticação
+dotnet new webapi --auth IndividualB2C -n MinhaApi
+🎯 Para seu Bootcamp, recomendo:
+Comece com webapi para APIs REST
+
+Use classlib para organizar seu código
+
+Adicione xunit para testes
+
+Gerencie tudo com sln
+
+Quer que eu detalhe mais algum template específico?

@@ -85,3 +85,129 @@ Isso explica por que JavaScript, que era lento nos anos 90, hoje compete em perf
 Convenções de sintaxe:
 Classes, atributos, métodos = PascalCase
 variáveis de sitema = camelCase
+
+
+Operadores de Atribuição em C#
+Tabela Completa dos Operadores de Atribuição
+Operador	Sintaxe	Equivalente	Exemplo	Resultado (se x = 10)
+=	x = y	-	x = 5	x = 5
++=	x += y	x = x + y	x += 3	x = 13
+-=	x -= y	x = x - y	x -= 4	x = 6
+*=	x *= y	x = x * y	x *= 2	x = 20
+/=	x /= y	x = x / y	x /= 5	x = 2
+%=	x %= y	x = x % y	x %= 3	x = 1
+&=	x &= y	x = x & y	x &= 6	x = 2
+|=	x |= y	x = x | y	x |= 3	x = 11
+^=	x ^= y	x = x ^ y	x ^= 5	x = 15
+<<=	x <<= y	x = x << y	x <<= 1	x = 20
+>>=	x >>= y	x = x >> y	x >>= 1	x = 5
+??=	x ??= y	x = x ?? y	x ??= 15	x = 10 (não altera)
+
+
+Regras e Comportamentos Importantes
+Precedência: Operadores de atribuição têm baixa precedência
+
+Associatividade: Right-associative (da direita para esquerda)
+
+Tipo: O tipo da variável determina o resultado da operação
+
+Conversão: Conversões implícitas ocorrem quando possível
+
+Nullables: Operadores funcionam com tipos nullable
+
+Dicas de Uso
+Use para simplificar código e melhorar legibilidade
+
+Cuidado com efeitos colaterais em expressões complexas
+
+Prefira ??= para valores padrão em variáveis nullable
+
+Evite combinar com operadores de incremento/decremento na mesma expressão
+
+Esses operadores são fundamentais para escrever código C# conciso e eficiente!
+
+Conversão de valores:
+
+Tabela de Conversão de Tipos em C#
+Conversões Implícitas (Automáticas)
+De	    Para	                                    Observações
+byte	short, int, long, float, double, decimal	
+sbyte	short, int, long, float, double, decimal	
+short	int, long, float, double, decimal	
+ushort	int, uint, long, ulong, float, double, decimal	
+int	    long, float, double, decimal	
+uint	long, ulong, float, double, decimal	
+long	float, double, decimal	Pode perder precisão
+ulong	float, double, decimal	Pode perder precisão
+float	double	
+char	ushort, int, uint, long, ulong, float, double, decimal	
+
+
+Conversões Explícitas (Cast)
+De	                        Para	                            Exemplo	                                Risco
+double	                    float	                            (float)doubleValue	                    Perda de precisão
+float	                    long	                            (long)floatValue	                    Perda de decimais
+long	                    int	                                (int)longValue	                        Overflow
+int	                        short	                            (short)intValue	                        Overflow
+decimal	                    int	                                (int)decimalValue	                    Perda de decimais
+double	                    int	                                (int)doubleValue	                    Perda de decimais
+string	                    char	                            (char)"A"	                            Apenas strings de 1 caractere
+
+Métodos de Conversão Comuns
+
+Conversão com Convert.ToX()
+Método	                                    Exemplo	                                                Tratamento de Erro
+Convert.ToInt32()	                        Convert.ToInt32("123")	                                Lança FormatException
+Convert.ToDouble()	                        Convert.ToDouble("12.5")	                            Lança FormatException
+Convert.ToBoolean()	                        Convert.ToBoolean("true")	                            Lança FormatException
+Convert.ToDateTime()	                    Convert.ToDateTime("2023-01-01")	                       Lança FormatException
+
+
+Conversão com Parse()
+Método	                                                    Exemplo	Tratamento de Erro
+int.Parse()	int.Parse("123")	                            Lança FormatException
+double.Parse()	double.Parse("12.5")	                    Lança FormatException
+bool.Parse()	bool.Parse("true")	                    Lança FormatException
+DateTime.Parse()	DateTime.Parse("2023-01-01")	    Lança FormatException
+Conversão com TryParse()
+Método	                                Exemplo	                                                    Retorno
+int.TryParse()	                        int.TryParse("123", out int result)	                        bool (true/false)
+double.TryParse()	                    double.TryParse("12.5", out double result)	                bool (true/false)
+bool.TryParse()	                        bool.TryParse("true", out bool result)	                    bool (true/false)
+DateTime.TryParse()	                    DateTime.TryParse("2023-01-01", out DateTime result)	    bool (true/false)
+
+
+Tabela de Métodos de Extensão Úteis
+Método	                        Descrição	                                Exemplo
+.ToString()	                    Converte para string	123.ToString() → "123"
+.ToString("format")	            Converte com formatação	123.ToString("C") → "R$ 123,00"
+Convert.ToXxx()	                Conversão segura entre tipos	Convert.ToInt32("123") → 123
+(T)valor	                    Cast explícito	(int)45.7 → 45
+as T	                        Cast seguro (retorna null se falhar)	obj as string
+is T	                        Verifica tipo	if (obj is string)
+
+
+Cuidados e Boas Práticas
+Sempre valide entradas antes de converter
+
+Use TryParse() em vez de Parse() para entradas do usuário
+
+Esteja ciente de perda de precisão em conversões numéricas
+
+Use casts explícitos apenas quando tiver certeza do tipo
+
+Considere usar Convert.ChangeType() para conversões genéricas
+
+Esta tabela cobre a maioria dos cenários de conversão de tipos que você encontrará no desenvolvimento C#!
+
+Diferença entre Parse e Convert:
+
+Tabela Comparativa Completa
+Cenário	                            int.Parse()	                            Convert.ToInt32()
+null	                            ArgumentNullException	                Retorna 0
+"" (string vazia)	                FormatException	                        FormatException
+" " (apenas whitespace)	            FormatException	                        FormatException
+" 123 " (whitespace + número)	    FormatException	                        Retorna 123 (faz trim)
+"123" (número válido)	            Retorna 123	                            Retorna 123
+"abc" (texto inválido)	            FormatException	                        FormatException
+"123.45" (decimal para int)	        FormatException	                        FormatException
