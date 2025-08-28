@@ -1,15 +1,9 @@
-🚀 Bootcamp Backend & API com .NET
+🚀 #Bootcamp Backend & API com .NET
 
-<div align="center">
-https://img.shields.io/badge/.NET-512BD4?style=for-the-badge&logo=dotnet&logoColor=white
-https://img.shields.io/badge/C%2523-239120?style=for-the-badge&logo=c-sharp&logoColor=white
-https://img.shields.io/badge/IA-%2523FF6F00.svg?style=for-the-badge&logo=ai&logoColor=white
-
-</div>
-📋 Sobre o Bootcamp
+📋 ##Sobre o Bootcamp
 Bootcamp focado no desenvolvimento de APIs e sistemas backend utilizando .NET 8 com integração de serviços de IA como diferencial estratégico.
 
-🎯 Objetivos Principais
+🎯 #Objetivos Principais
 Dominar desenvolvimento de APIs com ASP.NET Core
 
 Implementar arquiteturas modernas e escaláveis
@@ -20,8 +14,10 @@ Desenvolver front-end para consumo de APIs
 
 Gerenciar containers com Docker
 
-🛠️ Stack Tecnológica Inicial
+🛠️ #Stack Tecnológica Inicial
+
 Core .NET
+
 .NET 8 - Framework principal
 
 ASP.NET Core - APIs Web RESTful
