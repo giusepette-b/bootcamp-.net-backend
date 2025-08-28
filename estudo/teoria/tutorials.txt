@@ -1,0 +1,7 @@
+# Instalar SDK e runtime do .NET
+sudo apt install -y dotnet-sdk-8.0 aspnetcore-runtime-8.0
+
+# Instalar ferramentas globais úteis
+dotnet tool install -g dotnet-ef
+dotnet tool install -g dotnet-serve
+dotnet tool install -g Microsoft.dotnet-interactive

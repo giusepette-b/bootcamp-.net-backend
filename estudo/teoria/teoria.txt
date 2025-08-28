@@ -80,3 +80,8 @@ Conclusão
 A afirmação "JavaScript e PHP não compilam" é tecnicamente imprecisa. Elas não compilam antes da execução como C/C++, mas sim durante a execução usando técnicas sofisticadas de JIT compilation.
 
 Isso explica por que JavaScript, que era lento nos anos 90, hoje compete em performance com linguagens compiladas em muitos cenários!
+
+
+Convenções de sintaxe:
+Classes, atributos, métodos = PascalCase
+variáveis de sitema = camelCase
