@@ -1,0 +1,14 @@
+# Cria a solution
+dotnet new sln -n MinhaSolution
+
+# Cria projetos
+dotnet new classlib -n MeuProjetoUtils
+dotnet new console -n MeuAppPrincipal
+dotnet new webapi -n MeuWebApi
+
+# Adiciona projetos à solution
+dotnet sln add MeuProjetoUtils/MeuProjetoUtils.csproj
+dotnet sln add MeuAppPrincipal/MeuAppPrincipal.csproj
+dotnet sln add MeuWebApi/MeuWebApi.csproj
+
+dotnet sln add ../caminho/para/MeuProjetoExistente/MeuProjetoExistente.csproj
