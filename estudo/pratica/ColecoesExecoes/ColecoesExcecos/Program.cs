@@ -34,6 +34,15 @@ namespace ExcecoesColecoes
             // 5. Manipulação segura com exceções
             Console.WriteLine("5. MANIPULAÇÃO SEGURA COM EXCEÇÕES:");
             ManipulacaoSegura.Demonstrar();
+
+            // 6. Métodos de coleções genéricas
+            Console.WriteLine("6. MÉTODOS DE COLEÇÕES GENÉRICAS:");
+            ColecoesGenericasMetodos.DemonstrarMetodos();
+            Console.WriteLine();
+
+            // 7. Métodos de coleções especializadas
+            Console.WriteLine("7. MÉTODOS DE COLEÇÕES ESPECIALIZADAS:");
+            ColecoesEspecializadasMetodos.DemonstrarMetodos();
         }
     }
 }

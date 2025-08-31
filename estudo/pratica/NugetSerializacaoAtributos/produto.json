@@ -1,0 +1,12 @@
+{
+  "Id": 1,
+  "Nome": "Notebook Gamer",
+  "Preco": 3549.99,
+  "Categoria": "Eletr\u00F4nicos",
+  "DataFabricacao": "2024-01-15T00:00:00",
+  "Especificacoes": {
+    "Processador": "Intel i7",
+    "Mem\u00F3ria": "16GB RAM",
+    "Armazenamento": "512GB SSD"
+  }
+}
