@@ -29,6 +29,10 @@ namespace NugetSerializacaoAtributos
             // 4. Exemplo Integrado
             Console.WriteLine("4. EXEMPLO INTEGRADO:");
             ExemploIntegrado.Demonstrar();
+            
+            // 5. Demonstração do Newtonsoft.Json
+            Console.WriteLine("5. NEWTONSOFT.JSON DEMONSTRAÇÃO:");
+            NewtonsoftJsonDemo.Demonstrar();
         }
     }
 }
